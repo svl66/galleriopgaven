@@ -1,11 +1,11 @@
 const express = require('express');
 const router = express.Router();
 
-router.get('/galleri', function (req, res) {
+router.get('/kontakt', function (req, res) {
     //res.end("Forside til galleri");
-    res.render('galleri', {
-        "pageTitle": "Galleriet",
-        "pageId": "galleri",
+    res.render('kontakt', {
+        "pageTitle": "Kontaktsiden",
+        "pageId": "kontakt"
     });
 });
 
