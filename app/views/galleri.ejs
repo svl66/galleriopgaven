@@ -1,8 +1,19 @@
 <% extend('layout') %>
+
     <section>
         <div class="menu">
             <%- include('menu') -%>
+
         </div>
-        <div class="content">indhold</div>
+        <div class="content">Dynamisk indhold:
+            <div id="dyn">??</div>
+
+        </div>
     </section>
     <p class="clearBoth">Ja,det er så galleriet hvor du kan se billeder!</p>
+
+    <script>
+        var id = '<%- id %>';
+        var imgArr = [null, "Færøerne", "Berlin", "Nytår"];
+        document.getElementById('dyn').innerHTML = imgArr[id];
+    </script>
